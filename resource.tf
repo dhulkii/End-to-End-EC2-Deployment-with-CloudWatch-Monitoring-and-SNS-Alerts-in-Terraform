@@ -72,7 +72,7 @@ resource "aws_sns_topic" "my-sns" {
 resource "aws_sns_topic_subscription" "my-sns-suscribtion" {
   topic_arn = aws_sns_topic.my-sns.arn
   protocol  = "email"
-  endpoint  = "muhammeddhulkiflik@gmail.com"
+  endpoint  = "your-email@gmail.com"
 }
 
 resource "aws_cloudwatch_metric_alarm" "high_cpu_alarm" {
